@@ -62,7 +62,7 @@ describe("Given I am connected as an employee", () => {
             querySelector: querySelectorMock,
           },
         });
-Z
+
         await waitFor(() => {
           expect(updateSpy).toHaveBeenCalled();
         });
