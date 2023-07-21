@@ -55,9 +55,6 @@ describe("Given I am connected as an employee", () => {
           localStorage,
         });
         const updateSpy = jest.spyOn(newBill, "updateBill");
-
-        const form = screen.getByTestId("form-new-bill");
-
         newBill.handleSubmit({
           preventDefault: () => {},
           target: {
@@ -65,7 +62,7 @@ describe("Given I am connected as an employee", () => {
             querySelector: querySelectorMock,
           },
         });
-
+Z
         await waitFor(() => {
           expect(updateSpy).toHaveBeenCalled();
         });
